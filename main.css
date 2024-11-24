@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body, html {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.alphabet{
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center; 
+  align-items: center; 
+  gap: 10px; 
+  width: 100%; 
+  max-height: 0px; 
+  height: 100%;
+  max-width: 700px;
+}
+.letter{
+  margin: 5px;
+    background-color: rgb(0, 94, 255);
+    color: white;
+    padding: 20px 40px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 18px;
+    letter-spacing: 1px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    transition: transform 0.5s;
+}
+.letter:hover {
+    transform: scale(1.20);
+}
+.letter:active {
+    transform: scale(0.97);
+}
+.panel{
+  display: flex;
+  margin: 10px;
+}
+.input__push{
+    width: 300px; /* Ширина input */
+    height: 40px; /* Высота input */
+    font-size: 16px;
+    text-align: center;
+}
+.delet{
+    width: 50px;
+    background-color: rgba(255, 0, 0, 0.384);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: transform 0.5s;
+}
+.delet:hover {
+    background-color: rgba(255, 0, 0, 0.842);
+}
+.submit{
+    width: 50px;
+    background-color: rgba(87, 255, 123, 0.568);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: transform 0.5s;
+}
+.submit:hover {
+    background-color: rgba(36, 182, 0, 0.842);
+}
