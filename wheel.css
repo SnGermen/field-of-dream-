@@ -1,0 +1,74 @@
+/* Стиль для колеса */
+.wheel {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: conic-gradient(
+    #8A2BE2 0deg 51.43deg,   /* Сектор 1 (зеленый, например 0) */
+    #FFD700 51.43deg 102.86deg, /* Сектор 2 (красный, например 100) */
+    #8A2BE2 102.86deg 154.29deg, /* Сектор 3 (синий, например 50) */
+    #FFD700 154.29deg 205.71deg, /* Сектор 4 (желтый, например 150) */
+    #8A2BE2 205.71deg 257.14deg, /* Сектор 5 (фиолетовый, например 200) */
+    #FFD700 257.14deg 308.57deg, /* Сектор 6 (красный, например 300) */
+    #ce269c 308.57deg 360deg    /* Сектор 7 (зеленый, например 350) */
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 8px solid #000;
+  overflow: hidden;
+}
+
+/* Стрелка */
+
+
+/* Текст внутри колеса */
+.box {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff; /* Белый цвет для текста */
+}
+
+/* Размещение текста по кругу */
+.box:nth-child(1) {
+  transform: rotate(40.71deg) translate(100px) 
+}
+
+.box:nth-child(2) {
+  transform: rotate(90deg) translate(100px) 
+}
+
+.box:nth-child(3) {
+  transform: rotate(140.57deg) translate(100px) 
+}
+
+.box:nth-child(4) {
+  transform: rotate(190deg) translate(100px) 
+}
+
+.box:nth-child(5) {
+  transform: rotate(245.43deg) translate(100px) 
+}
+
+.box:nth-child(6) {
+  transform: rotate(300.86deg) translate(100px) 
+}
+.box:nth-child(7) {
+  transform: rotate(-10deg) translate(100px) 
+}
+
+
+.spin{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: black;
+  color: white;
+
+}
