@@ -1,4 +1,5 @@
 // Получаем элементы
+
 const wheel = document.querySelector('.wheel');
 const spinButton = document.querySelector('.spin');
 const scoreDisplay = document.querySelector('.score');
@@ -25,15 +26,19 @@ spinButton.addEventListener('click', () => {
     // Нормализуем угол (приводим к диапазону 0-360)
     const normalizedAngle = currentAngle % 360;
 
-    // Рассчитываем, какой сектор находится сверху
-    const sectorAngle = 360 / values.length; // Угол одного сектора
-    const adjustedAngle = (360 - normalizedAngle + sectorAngle / 2) % 360; // Сдвиг для верхнего сектора
-    const selectedIndex = Math.floor(adjustedAngle / sectorAngle);
+    // Угол одного сектора
+    const sectorAngle = 360 / values.length;
+
+    // Определяем индекс сектора сверху
+    const selectedIndex = Math.floor((360 - normalizedAngle) / sectorAngle) % values.length;
 
     // Показываем результат
-    scoreDisplay.innerText = `Score: ${values[selectedIndex]}`;
 
+    if (check == true) {
+      scoreDisplay.innerText = `Score: ${values[selectedIndex]}`;
+
+    }
     // Включаем кнопку снова
     spinButton.disabled = false;
-  }, 4000); // Время должно совпадать с длительностью анимации
+  }, 4000); // Время анимации
 });
