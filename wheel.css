@@ -95,6 +95,9 @@
   padding: 15px; /* Внутренний отступ */
   width: fit-content; /* Размер под текст */
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Тень для объема */
-  margin: 20px 0; /* Отступ сверху и снизу */
   text-align: center; /* Центровка текста */
+}
+
+.score{
+    font-size: 24px;
 }
