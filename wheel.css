@@ -72,3 +72,29 @@
   color: white;
 
 }
+
+
+.yakubovich{
+  width: 160px;
+  margin-left: 10px;
+}
+
+.block{
+    display: flex;
+    justify-content: end;
+    margin-right: -260px;
+}
+
+.question{
+  font-family: 'Arial', sans-serif;
+  font-size: 18px;
+  color: #333;
+  background-color: #f9f9f9; /* Нежный фон */
+  border: 1px solid #ddd; /* Легкая рамка */
+  border-radius: 10px; /* Скругленные углы */
+  padding: 15px; /* Внутренний отступ */
+  width: fit-content; /* Размер под текст */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Тень для объема */
+  margin: 20px 0; /* Отступ сверху и снизу */
+  text-align: center; /* Центровка текста */
+}

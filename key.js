@@ -17,11 +17,21 @@ const questions = [
   { question: "Capital of France", answer: "Paris" },
   { question: "The largest animal", answer: "Whale" },
   { question: "Inventor of the electric light bulb", answer: "Edison" },
-  { question: "Name of me", answer: "Germen" },
+  { question: "Name of me", answer: "Yakubovich" },
   { question: "Planet in the Solar System", answer: "Mars" },
   { question: "a", answer: "a" },
+  { question: "The fastest land animal", answer: "Cheetah" },
+  { question: "The tallest mountain", answer: "Everest" },
+  { question: "The largest ocean", answer: "Pacific" },
+  { question: "The author of 'Hamlet'", answer: "Shakespeare" },
+  { question: "The color of the sky on a clear day", answer: "Blue" },
+  { question: "The hottest planet in the Solar System", answer: "Venus" },
+  { question: "The number of days in a leap year", answer: "366" },
+  { question: "The chemical symbol for water", answer: "H2O" },
+  { question: "The currency of Japan", answer: "Yen" },
+  { question: "The hardest natural substance", answer: "Diamond" },
 ];
-
+console.log(questions)
 // Генерируем случайный вопрос
 let rundom = questions[Math.floor(Math.random() * questions.length)];
 
